@@ -353,7 +353,7 @@ dialog::backdrop{background:rgba(20,26,23,.86);backdrop-filter:blur(4px)}
 
 /* ---------- responsive ---------- */
 @media screen and (max-width:960px){
-  .nav a:not(.cv){display:none}
+  .nav a:not(.cv):not(.lang){display:none}
   .hero{grid-template-columns:1fr;min-height:auto;gap:24px;padding-top:40px}
   .collage{height:420px;min-height:0}
   .fit{grid-template-columns:1fr}
@@ -473,6 +473,7 @@ dialog::backdrop{background:rgba(20,26,23,.86);backdrop-filter:blur(4px)}
   .reveal,.polaroid,.stamp{opacity:1;transform:none}
   .hero h1 em:after{transform:skew(-8deg)}
 }
+.nav .lang{font-family:var(--mono);font-size:11px;letter-spacing:.08em}
 </style>
 </head>
 <body>
@@ -487,6 +488,7 @@ dialog::backdrop{background:rgba(20,26,23,.86);backdrop-filter:blur(4px)}
       <a href="#projects">东南亚项目</a>
       <a href="#toolkit">AI 工具箱</a>
       <a href="#about">关于</a>
+      <a class="lang" href="en/" lang="en">EN</a>
       <a class="cv" href="resume-luo-yitian.pdf" target="_blank" rel="noopener">简历 ↗</a>
     </nav>
   </div>
